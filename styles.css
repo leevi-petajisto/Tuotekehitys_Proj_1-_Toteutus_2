@@ -19,7 +19,6 @@
 body {
   background: var(--light);
   color: var(--text);
-  overflow-x: hidden;
 }
 
 /* ========================= */
@@ -54,9 +53,6 @@ body {
   list-style: none;
   display: flex;
   gap: 25px;
-  width: 100%;
-  left: 0;
-  right: 0;
 }
 
 .nav-links a {
@@ -147,8 +143,7 @@ body {
 }
 
 .hero-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 500px;
   margin: auto;
   background: #dff5e7;
   border-radius: 20px;
@@ -160,9 +155,9 @@ body {
 /* CONTENT */
 .etusivu .content {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 40px 20px;
+  grid-template-columns: 1fr 1fr 280px;
+  gap: 25px;
+  padding: 60px 30px;
 }
 
 .left, .middle {
@@ -185,7 +180,7 @@ body {
 }
 
 .card {
-  width: 100%;
+  
   border-radius: 20px;
   padding: 30px;
   border: 1px solid #2a2a2d;
@@ -410,10 +405,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  margin-top: 40px;
-  flex-direction: column;
-  text-align: center;
-  gap: 10px;
+  margin-top: auto; /* Vaihdettu 40px -> auto */
 }
 
 /* ========================= */
@@ -631,7 +623,7 @@ footer {
   }
 
   .right {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .card {
@@ -648,6 +640,9 @@ footer {
   .cleaners-grid {
     grid-template-columns: 1fr; /* Puhelimella vain yksi sarake */
   }
+  
+}
+
 /* Info */
 
 .about-page {
@@ -728,4 +723,120 @@ footer {
         font-size: 16px;
         line-height: 1.7;
     }
+}
+
+/* LOMAKE */
+.lomake {
+  padding-top: var(--nav-height);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  background: var(--light);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  background-image: url(lappi_kuva.jpg);
+
+.hero-lomake {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero-teksti {
+    flex: 1;
+  }
+  .hero-teksti h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .hero-teksti p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+
+.kortti {
+  margin-top: 100px;
+  background: var(--light);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #2a2a2d;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: 0.3s;
+  border-color: #3a3a3f;
+  }
+
+
+.listtyle {
+  list-style: none;
+  margin: 40px;
+
+}
+
+.listname {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+
+& span {
+  font-size: 14px;
+  color: #aaa;
+}
+}
+
+.nappi {
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 12px;
+    border-radius: 999px;
+    width: 500px;
+    border: none;
+    
+    background: var(--green);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: skewX(-20deg);
+      transition: left 0.4s ease;
+    }
+    &:hover::before {
+      left: 150%;
+    }
+  }
+
+
+.input {
+  flex: 0 0 200px;
+  margin-left: 10px;
+  margin-top: auto;
+  padding: 10px;
+  border-radius: 999px;
+  width: 500px;
+  border: 1px solid #2a2a2d;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
 }
