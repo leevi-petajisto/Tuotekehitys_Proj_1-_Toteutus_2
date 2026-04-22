@@ -41,7 +41,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  /*padding: 0 30px;*/
 }
 
 .logo {
@@ -54,6 +54,9 @@ body {
   list-style: none;
   display: flex;
   gap: 25px;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .nav-links a {
@@ -624,7 +627,7 @@ footer {
   }
 
   .etusivu .content {
-    grid-template-columns: 1fr 1fr 280px;
+    grid-template-columns: 1fr;
   }
 
   .right {
