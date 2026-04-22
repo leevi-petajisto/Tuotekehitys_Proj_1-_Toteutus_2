@@ -2,42 +2,69 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <title>Lomake</title>
+  <title>Tilaa siivous</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 
-<main class="lomake">
+<body class="lomake">
     <header class="site-header">
         <nav class="navbar">
             <div class="logo">Lapland Cleaning Co.</div>
-
             <input type="checkbox" id="menu-toggle">
-
             <label for="menu-toggle" class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
             <ul class="nav-links">
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="info.html">Meistä</a></li>
                 <li><a href="hinnasto.html">Hinnasto</a></li>
                 <li><a href="contacts.html">Yhteystiedot</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact_form.html">Lomake</a></li>
+                <li><a href="contact_form.html">Tilaa siivous</a></li>
             </ul>
         </nav>
     </header>
-    <body>
-        
-        <footer>
-        <div>Lapland Cleaning Co.</div>
-        <div>Inarintie 49, 99870 Inari</div>
-        <div><a href="mailto:info@laplandclean.fi">info@laplandclean.fi</a></div>
-        </footer>
-    </body>
-</main>
+
+    <main class="tilauslomake">
+        <section class="hero-lomake">
+            <div class="hero-teksti">
+                <h1>Tilaa siivous</h1>
+                <p>Tilaa siivous täyttämällä yhteystietonne. Otamme teihin yhteyttä mahdollisimman pian.</p>
+            </div>
+
+        <div class="kortti">
+            <form>
+                <ul class="listtyle">
+                    <li>
+                        <label class="listname" for="nimi">Nimi</label>
+                        <input class="input" type="text" id="nimi" name="nimi" placeholder="*Pakollinen kenttä" required>
+                    </li>
+                    <li>
+                        <label class="listname" for="puhnro">Puhelinnumero</label>
+                        <input class="input" type="text" id="puhnro" name="puhelinumero" placeholder="*Pakollinen kenttä" required>
+                    </li>
+                    <li>
+                        <label class="listname" for="email">Sähköposti</label>
+                        <input class="input" type="text" id="email" name="sähköposti" placeholder="*Pakollinen kenttä" required>
+                    </li>
+                    <li>
+                        <button class="nappi">Tilaa</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>   
+
+
+    <footer>
+    <div>Lapland Cleaning Co.</div>
+    <div>Inarintie 49, 99870 Inari</div>
+    <div><a href="mailto:info@laplandclean.fi">info@laplandclean.fi</a></div>
+    </footer>
+
+</body>
 
 </html>
