@@ -162,7 +162,7 @@ body {
 }
 
 .left, .middle {
-  width: 80%;
+  width: 100%;
   height: auto;
   background: var(--card);
   padding: 30px;
@@ -184,7 +184,6 @@ body {
 }
 
 .card {
-  width: 100%;
   border-radius: 20px;
   padding: 30px;
   border: 1px solid #2a2a2d;
