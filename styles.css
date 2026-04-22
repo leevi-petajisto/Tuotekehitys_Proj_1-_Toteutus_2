@@ -171,6 +171,7 @@ body {
   transition: 0.3s;
   border: 1px solid #2a2a2d;
   box-sizing: border-box;
+  font-size: 1.1rem;
 }
 
 .left:hover, .middle:hover {
@@ -194,7 +195,6 @@ body {
   position: relative;
   isolation: isolate;
   box-sizing: border-box;
-  font-size: 100%;
 
   &::after {
     content: "";
