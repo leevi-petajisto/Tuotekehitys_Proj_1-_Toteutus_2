@@ -122,7 +122,6 @@ body {
 
 .etusivu {
   padding-top: var(--nav-height);
-  font-size: 18px;
 }
 
 /* HERO */
@@ -160,6 +159,7 @@ body {
   grid-template-columns: 1fr 1fr 280px;
   gap: 25px;
   padding: 60px 30px;
+  font-size: 18px;
 }
 
 .left, .middle {
