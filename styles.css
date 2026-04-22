@@ -166,6 +166,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   transition: 0.3s;
+  border: 1px solid #2a2a2d;
 }
 
 .left:hover, .middle:hover {
