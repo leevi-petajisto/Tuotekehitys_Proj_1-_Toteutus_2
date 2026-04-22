@@ -646,7 +646,7 @@ footer {
     grid-template-columns: 1fr; /* Puhelimella vain yksi sarake */
   }
    .etusivu .content {
-    grid-template-columns: 1fr 1fr 280px;
+    grid-template-columns: 1fr;
   }
 
   .right {
