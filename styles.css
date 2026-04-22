@@ -162,14 +162,15 @@ body {
 }
 
 .left, .middle {
-  width: 80%;
+  /*width: 80%;*/
   height: auto;
   background: var(--card);
-  padding: 30px;
+  /*padding: 30px;*/
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   transition: 0.3s;
   border: 1px solid #2a2a2d;
+  box-sizing: border-box;
 }
 
 .left:hover, .middle:hover {
@@ -183,9 +184,9 @@ body {
 }
 
 .card {
-  width: 100%
+  /*width: 100%*/
   border-radius: 20px;
-  padding: 30px;
+  /*padding: 30px;*/
   border: 1px solid #2a2a2d;
   display: flex;
   flex-direction: column;
@@ -193,6 +194,7 @@ body {
   transition: 0.3s;
   position: relative;
   isolation: isolate;
+  box-sizing: border-box;
 
   &::after {
     content: "";
