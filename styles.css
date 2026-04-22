@@ -165,7 +165,7 @@ body {
   width: 100%;
   height: auto;
   background: var(--card);
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   transition: 0.3s;
@@ -627,7 +627,7 @@ footer {
   }
 
   .right {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .card {
