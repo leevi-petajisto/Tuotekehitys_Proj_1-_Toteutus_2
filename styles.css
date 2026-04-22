@@ -19,6 +19,7 @@
 body {
   background: var(--light);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 /* ========================= */
@@ -143,7 +144,8 @@ body {
 }
 
 .hero-image {
-  max-width: 500px;
+  max-width: 100%;
+  height: auto;
   margin: auto;
   background: #dff5e7;
   border-radius: 20px;
@@ -155,9 +157,9 @@ body {
 /* CONTENT */
 .etusivu .content {
   display: grid;
-  grid-template-columns: 1fr 1fr 280px;
-  gap: 25px;
-  padding: 60px 30px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 40px 20px;
 }
 
 .left, .middle {
@@ -180,7 +182,7 @@ body {
 }
 
 .card {
-  
+  width: 100%;
   border-radius: 20px;
   padding: 30px;
   border: 1px solid #2a2a2d;
@@ -218,6 +220,8 @@ body {
     border-color: #3a3a3f;
     }
 }
+
+
 
 /* HINNASTO */
 .hinnasto2 {
@@ -404,6 +408,9 @@ footer {
   justify-content: space-around;
   padding: 30px;
   margin-top: 40px;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
 }
 
 /* ========================= */
@@ -637,6 +644,13 @@ footer {
 /* Yhteystiedot-sivun uudet mobiiliasetukset */
   .cleaners-grid {
     grid-template-columns: 1fr; /* Puhelimella vain yksi sarake */
+  }
+   .etusivu .content {
+    grid-template-columns: 1fr 1fr 280px;
+  }
+
+  .right {
+    flex-direction: column;
   }
   
 }
