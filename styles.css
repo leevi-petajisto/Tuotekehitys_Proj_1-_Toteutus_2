@@ -122,6 +122,7 @@ body {
 
 .etusivu {
   padding-top: var(--nav-height);
+  font-size: 18px;
 }
 
 /* HERO */
